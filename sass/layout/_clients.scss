@@ -1,0 +1,39 @@
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.client-link {
+  @extend %align;
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--link-icon-grey-color);
+  border-radius: 4px;
+  fill: var(--link-icon-grey-color);
+
+  transition: background-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--link-hover-blue-color);
+    fill: var(--link-hover-blue-color);
+  }
+}
+
+.client-link-item {
+  width: calc((100% - 30px)/2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px)/3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px)/6);
+  }
+}
+
+.client-icon {
+  align-items: center;
+  justify-content: center;
+}

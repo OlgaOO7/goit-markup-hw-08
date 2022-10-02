@@ -1,0 +1,21 @@
+%contact {
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
+%align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%sections {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

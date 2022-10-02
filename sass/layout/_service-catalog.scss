@@ -1,0 +1,42 @@
+.our-work {
+  display: none;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-work {
+    display: block;
+  }
+}
+
+.catalog {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.catalog-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.catalog-theme {
+  position: absolute;
+  @extend %align;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--catalog-theme-background-color);
+}
+
+.work-feature-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--white-text-color);
+}
+
+.work-feature {
+  position: relative;
+}
