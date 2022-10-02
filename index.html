@@ -56,7 +56,7 @@
         </ul>
 
         <button type="button" class="open-mobile-menu-btn js-open-menu">
-          <svg class="open-mob-menu-btn__icon" width="40" height="40">
+          <svg class="open-mob-menu-btn__icon" width="24" height="16">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
@@ -65,26 +65,26 @@
       <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu__container">
           <button type="button" class="mobile-menu__close-btn js-close-menu">
-            <svg class="mobile-menu__close-icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg class="mobile-menu__close-icon" width="19" height="19">
+              <use href="./images/icons.svg#icon-close-menu"></use>
             </svg>
           </button>
           <ul class="mobile-menu-nav list">
-            <li class="mobile-menu-nav__item"><a href="./index.html" class="mobile-menu-nav__link mobile-menu-nav__link_current link">Студія</a></li>
-            <li class="mobile-menu-nav__item"><a href="./portfolio.html" class="mobile-menu-nav__link link">Портфоліо</a></li>
-            <li class="mobile-menu-nav__item"><a href="#"  class="mobile-menu-nav__link link">Контакти</a></li>
+            <li class="mobile-menu-nav__item"><a href="./index.html" class="mobile-menu-nav__link mobile-menu-nav__link_current">Студія</a></li>
+            <li class="mobile-menu-nav__item"><a href="./portfolio.html" class="mobile-menu-nav__link">Портфоліо</a></li>
+            <li class="mobile-menu-nav__item"><a href="#"  class="mobile-menu-nav__link">Контакти</a></li>
           </ul>
 
           <ul class="mobile-menu-contacts list">
-            <li class="mobile-menu-contacts__item"><a class="mobile-header-link link">info@devstudio.com</a></li>
             <li class="mobile-menu-contacts__item"><a class="mobile-header-tel link">+38 096 111 11 11</a></li>
+            <li class="mobile-menu-contacts__item"><a class="mobile-header-link link">info@devstudio.com</a></li>
           </ul>
           
           <ul class="mobile-menu-socials list">
-            <li class="mobile-menu-socials__item"><a class="mobile-header-socials link">Instagram</a></li>
-            <li class="mobile-menu-socials__item"><a class="mobile-header-socials link">Twitter</a></li>
-            <li class="mobile-menu-socials__item"><a class="mobile-header-socials link">Facebook</a></li>
-            <li class="mobile-menu-socials__item"><a class="mobile-header-socials link">Linkedin</a></li>
+            <li class="mobile-menu-socials__item"><a href="#" class="mobile-header-socials link">Instagram</a></li>
+            <li class="mobile-menu-socials__item"><a href="#" class="mobile-header-socials link">Twitter</a></li>
+            <li class="mobile-menu-socials__item"><a href="#" class="mobile-header-socials link">Facebook</a></li>
+            <li class="mobile-menu-socials__item"><a href="#" class="mobile-header-socials link">Linkedin</a></li>
           </ul>
           
         </div>
@@ -167,7 +167,11 @@
           <ul class="catalog list">
             <li class="catalog-list">
               <div class="work-feature">
-                <img src="./images/our-work1.jpg" alt="Єкран монітору з клаіатурою" width="370" />
+                <picture>
+                  <source srcset="./images/our-work/our-work1-desktop.jpg 1x, ./images/our-work/our-work1-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                  
+                  <img src="./images/our-work1.jpg" alt="Єкран монітору з клаіатурою" width="370" />
+                  </picture>  
                 <div class="catalog-theme">
                   <p class="work-feature-name">ДЕСКТОПНІ ДОДАТКИ</p>
                 </div>
@@ -175,11 +179,11 @@
             </li>
             <li class="catalog-list">
               <div class="work-feature">
-                <img
-                  src="./images/our-work2.jpg"
-                  alt="Телефон в руках перед монітором"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/our-work/our-work2-desktop.jpg 1x, ./images/our-work/our-work2-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                  
+                  <img src="./images/our-work2.jpg" alt="Телефон в руках перед монітором" width="370" />
+                  </picture>  
                 <div class="catalog-theme">
                   <p class="work-feature-name">МОБІЛЬНІ ДОДАТКИ</p>
                 </div>
@@ -187,11 +191,11 @@
             </li>
             <li class="catalog-list">
               <div class="work-feature">
-                <img
-                  src="./images/our-work3.jpg"
-                  alt="Телефон із зображенням в руках"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/our-work/our-work3-desktop.jpg 1x, ./images/our-work/our-work3-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                  
+                  <img src="./images/our-work/our-work3-desktop.jpg" alt="Телефон із зображенням в руках" width="370" />
+                  </picture>  
                 <div class="catalog-theme">
                   <p class="work-feature-name">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                 </div>
@@ -204,29 +208,24 @@
 
       <!-- Team -->
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="section-title bottom">Наша команда</h2>
 
           <ul class="team-flex list">
             <li class="team-part">
-              <!-- <img
-                src="./images/worker1Demianenko.jpg"
-                alt="Усміхнений хлопець в окулярах"
-                width="270"
-                height="260"
-              /> -->
               <picture>
-                <source srcset="./images/hero-desktop.jpg 1x, ./images/hero-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./images/hero-tablet.jpg 1x, ./images/hero-tablet@2x.jpg 2x" media="(min-width: 768px)" />
-                <source srcset="./images/hero-mobile.jpg 1x, ./images/hero-mobile@2x.jpg 2x" />
-                <img src="./images/hero-desktop.jpg" alt="" width=""  />
+                <source srcset="./images/team/desktop/worker1-desktop.jpg 1x, ./images/team/desktop/worker1-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/worker1-tablet.jpg 1x, ./images/team/tablet/worker1-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/worker1-mobile.jpg 1x, ./images/team/mobile/worker1-mobile@2x.jpg 2x" />
+                
+                <img src="./images/worker1Demianenko.jpg" alt="Усміхнений хлопець в окулярах" width="450" />
                 </picture>  
               <div class="member">
                 <h3 class="member__team-subtitle">Ігор Дем'яненко</h3>
                 <p lang="en" class="member__position">Product Designer</p>
               </div>
               <div class="group-social-link">
-                <ul class="team-list list">
+                <ul class="team-social-list list">
                   <li class="team-list-items">
                     <a href="#" class="social-link-icon team-icon">
                       <svg
@@ -279,18 +278,19 @@
               </div>
             </li>
             <li class="team-part">
-              <img
-                src="./images/worker2Repina.jpg"
-                alt="Дівчина в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/desktop/worker2-desktop.jpg 1x, ./images/team/desktop/worker2-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/worker2-tablet.jpg 1x, ./images/team/tablet/worker2-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/worker2-mobile.jpg 1x, ./images/team/mobile/worker2-mobile@2x.jpg 2x" />
+                
+                <img src="./images/worker2Repina.jpg" alt="Дівчина в окулярах" width="450" />
+                </picture>  
               <div class="member">
                 <h3 class="member__team-subtitle">Ольга Рєпіна</h3>
                 <p lang="en" class="member__position">Frontend Developer</p>
               </div>
               <div class="group-social-link">
-                <ul class="team-list list">
+                <ul class="team-social-list list">
                   <li class="team-list-items">
                     <a href="#" class="social-link-icon team-icon">
                       <svg
@@ -343,18 +343,19 @@
               </div>
             </li>
             <li class="team-part">
-              <img
-                src="./images/worker3Tarasov.jpg"
-                alt="Усміхнений хлопець"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/desktop/worker3-desktop.jpg 1x, ./images/team/desktop/worker3-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/worker3-tablet.jpg 1x, ./images/team/tablet/worker3-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/worker3-mobile.jpg 1x, ./images/team/mobile/worker3-mobile@2x.jpg 2x" />
+                
+                <img src="./images/worker3Tarasov.jpg" alt="Усміхнений хлопець" width="450" />
+                </picture> 
               <div class="member">
                 <h3 class="member__team-subtitle">Микола Тарасов</h3>
                 <p lang="en" class="member__position">Marketing</p>
               </div>
               <div class="group-social-link">
-                <ul class="team-list list">
+                <ul class="team-social-list list">
                   <li class="team-list-items">
                     <a href="#" class="social-link-icon team-icon">
                       <svg
@@ -407,18 +408,19 @@
               </div>
             </li>
             <li class="team-part">
-              <img
-                src="./images/worker4Ermakov.jpg"
-                alt="Хлопець в окулярах на вулиці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/desktop/worker4-desktop.jpg 1x, ./images/team/desktop/worker4-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/worker4-tablet.jpg 1x, ./images/team/tablet/worker4-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/worker4-mobile.jpg 1x, ./images/team/mobile/worker4-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                <img src="./images/team/mobile/worker4-mobile.jpg" alt="Хлопець в окулярах на вулиці" width="450" />
+                </picture> 
               <div class="member">
                 <h3 class="member__team-subtitle">Михайло Єрмаков</h3>
                 <p lang="en" class="member__position">UI Designer</p>
               </div>
               <div class="group-social-link">
-                <ul class="team-list list">
+                <ul class="team-social-list list">
                   <li class="team-list-items">
                     <a href="#" class="social-link-icon team-icon">
                       <svg

@@ -35,11 +35,11 @@
 
 .member__team-subtitle {
   @include font (500, 16px);
-  line-height: 1.19;
+  line-height: 1.17;
   text-align: center;
 }
 
-.team-list {
+.team-social-list {
   display: flex;
   column-gap: 10px;
   align-items: center;
@@ -58,7 +58,7 @@
   background-color: var(--link-icon-background-color);
   fill: var(--link-icon-grey-color);
 
-  transition: background-color var(--timing-function);
+  transition: background-color var(--timing-function), fill var(--timing-function);
 
   &:hover,
   &:focus {
