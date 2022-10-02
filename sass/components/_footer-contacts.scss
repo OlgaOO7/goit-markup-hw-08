@@ -11,8 +11,8 @@
   color: var(--white-text-color);
 }
 
-.contact-link,
-.contact-tel-link {
+.footer-contact-link,
+.footer-contact-tel-link {
   @extend %contact;
   color: var(--contact_link_color);
 

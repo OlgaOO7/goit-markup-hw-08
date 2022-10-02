@@ -21,7 +21,7 @@
   }
 }
 
-.modal-close {
+.modal-close-btn {
   position: absolute;
   @extend %align;
   top: 8px;
@@ -36,7 +36,7 @@
   transition: fill var(--timing-function);
 }
 
-.modal-close:hover .modal-close-icon,
-.modal-close:focus .modal-close-icon {
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
   fill: var(--input-fill);
 }

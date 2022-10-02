@@ -54,15 +54,15 @@
   --icon-black-fill: #212121;
 }
 
-.contact-link,
-.contact-tel-link, .address-link {
+.footer-contact-link,
+.footer-contact-tel-link, .address-link {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 }
 
-.client-link, .catalog-theme, .features-list__icon-wrapper, .modal-form-checkbox, .modal-close, .button-subscribe, .footer-form {
+.client-link, .catalog-theme, .features-list__icon-wrapper, .modal-form-checkbox, .modal-close-btn, .button-subscribe, .footer-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,13 +312,13 @@ body {
   color: var(--white-text-color);
 }
 
-.contact-link,
-.contact-tel-link {
+.footer-contact-link,
+.footer-contact-tel-link {
   color: var(--contact_link_color);
   transition: background-color var(--timing-function);
 }
-.contact-link:hover,
-.contact-tel-link:hover {
+.footer-contact-link:hover,
+.footer-contact-tel-link:hover {
   color: var(--accent-text-logo-color);
 }
 
@@ -344,7 +344,7 @@ body {
   column-gap: 10px;
 }
 
-.social-link-icon {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,11 +355,11 @@ body {
   fill: var(--link-icon-grey-color);
   transition: background-color var(--timing-function);
 }
-.social-link-icon:hover, .social-link-icon:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--link-hover-blue-color);
 }
 
-.social-list-items {
+.social-list__items {
   align-items: center;
   justify-content: center;
 }
@@ -496,7 +496,7 @@ body {
     max-width: 528px;
   }
 }
-.modal-close {
+.modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -509,8 +509,8 @@ body {
   transition: fill var(--timing-function);
 }
 
-.modal-close:hover .modal-close-icon,
-.modal-close:focus .modal-close-icon {
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
   fill: var(--input-fill);
 }
 
@@ -519,7 +519,7 @@ body {
   flex-direction: column;
 }
 
-.modal-form-title {
+.modal-form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -528,7 +528,7 @@ body {
   text-align: center;
 }
 
-.form-label-desc {
+.form-label__desc {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -993,36 +993,36 @@ body {
   background-color: var(--tertiary-background-color);
 }
 
-.team-flex {
+.team-worker-list {
   display: flex;
   gap: 30px;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .team-flex {
+  .team-worker-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-.team-part {
+.team-worker-list__item {
   background-color: var(--main-background-color);
   box-shadow: 0 2px 1px 0 var(--team-shadow-one-color), 0 1px 1px 0 var(--team-shadow-two-color), 0 1px 3px 0 var(--team-shadow-three-color);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 @media screen and (min-width: 768px) {
-  .team-part {
+  .team-worker-list__item {
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-part {
+  .team-worker-list__item {
     width: calc((100% - 90px) / 4);
   }
 }
 
-.group-social-link {
+.group-social {
   padding-bottom: 30px;
 }
 
@@ -1082,16 +1082,16 @@ body {
   fill: var(--link-hover-blue-color);
 }
 
-.client-link-item {
+.client-list__item {
   width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
-  .client-link-item {
+  .client-list__item {
     width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
-  .client-link-item {
+  .client-list__item {
     width: calc((100% - 150px) / 6);
   }
 }
@@ -1220,20 +1220,20 @@ body {
   }
 }
 
-.footer-flex {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .footer-flex {
+  .footer-container {
     justify-content: space-around;
     align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-flex {
+  .footer-container {
     justify-content: space-between;
   }
 }
