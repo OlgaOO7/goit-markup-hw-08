@@ -30,10 +30,6 @@
     padding: 48px 40px;
   }
 
-  .mobile-menu-nav {
-    margin-bottom: 302px;
-  }
-
   .mobile-menu-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -78,7 +74,10 @@
   }
 
   .mobile-menu-contacts {
-    margin-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .mobile-menu-contacts__item:not(:last-child) {
